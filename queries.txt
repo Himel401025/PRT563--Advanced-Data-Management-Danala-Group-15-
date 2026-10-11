@@ -1,0 +1,69 @@
+// PRT563 Assignment 4 - Task 3: Four Cypher Query Use Cases
+// Project: MediConnect Healthcare Patient Appointment Booking
+// Run only after import.txt has completed successfully.
+
+
+
+// QUERY 1 - SIMPLE
+// Practical scenario: Find approved cardiologists within a patient's budget.
+
+MATCH (d:Doctor)-[:SPECIALIZED_IN]->(s:Specialization)
+WHERE s.name = 'Cardiology'
+  AND d.verificationStatus = 'APPROVED'
+  AND d.consultationFee <= 100
+RETURN d.name AS doctor,
+       d.qualifications AS qualifications,
+       d.experienceYears AS experience,
+       d.consultationFee AS fee
+ORDER BY fee ASC, experience DESC;
+
+
+
+// QUERY 2 - INTERMEDIATE
+// Practical scenario: Display one patient's appointment and payment history.
+
+MATCH (p:Patient {patientId: 1})-[:BOOKED]->(a:Appointment)
+      -[:WITH_DOCTOR]->(d:Doctor)-[:SPECIALIZED_IN]->(s:Specialization)
+OPTIONAL MATCH (a)-[:PAID_BY]->(pay:Payment)
+RETURN a.appointmentId AS id,
+       a.appointmentDate AS date,
+       d.name AS doctor,
+       s.name AS specialty,
+       a.bookingStatus AS booking,
+       coalesce(pay.status, 'UNPAID') AS payment
+ORDER BY date DESC;
+
+
+
+// QUERY 3 - COMPLEX MULTI-HOP TRAVERSAL
+// Practical scenario: Retrieve a patient's complete clinical journey.
+
+MATCH (p:Patient {patientId: 3})-[:BOOKED]->(a:Appointment)
+      -[:WITH_DOCTOR]->(d:Doctor)
+OPTIONAL MATCH (a)-[:PAID_BY]->(pay:Payment)
+OPTIONAL MATCH (a)-[:GENERATED_RECORD]->(r:MedicalRecord)
+OPTIONAL MATCH (r)-[:CONTAINS]->(rx:Prescription)
+RETURN p.name AS patient,
+       a.appointmentDate AS date,
+       d.name AS doctor,
+       pay.amount AS paid,
+       r.diagnosis AS diagnosis,
+       collect(rx.medicineName) AS medicines
+ORDER BY date DESC;
+
+
+
+// QUERY 4 - ADVANCED AGGREGATION
+// Practical scenario: Audit doctor activity and realised successful revenue.
+
+MATCH (d:Doctor)
+OPTIONAL MATCH (a:Appointment)-[:WITH_DOCTOR]->(d)
+OPTIONAL MATCH (a)-[:PAID_BY]->(pay:Payment {status: 'SUCCESS'})
+RETURN d.name AS doctor,
+       count(DISTINCT a) AS bookings,
+       count(DISTINCT CASE
+           WHEN a.bookingStatus = 'COMPLETED' THEN a
+       END) AS completed,
+       coalesce(sum(pay.amount), 0) AS realisedRevenue
+ORDER BY realisedRevenue DESC, bookings DESC, doctor;
+
