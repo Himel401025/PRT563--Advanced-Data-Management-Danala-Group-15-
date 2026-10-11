@@ -1,0 +1,4 @@
+prescription_id,record_id,medicine_name,strength,frequency,duration,instruction
+1,2,Paracetamol,500 mg,Twice daily,3 days,Take after meals if needed for discomfort.
+2,3,Paracetamol,500 mg,Up to three times daily,3 days,Use for fever or headache as required.
+3,3,Oral Rehydration Salts,1 sachet,As required,2 days,Mix with clean water according to packet directions.

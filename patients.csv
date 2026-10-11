@@ -1,0 +1,7 @@
+patient_id,full_name,email,phone,city,date_of_birth,gender,blood_group,allergies
+1,Alex Carter,alex.carter@example.test,0400000010,Darwin,1995-04-12,Male,O+,None known
+2,Mia Brown,mia.brown@example.test,0400000011,Palmerston,1998-09-21,Female,A+,Penicillin
+3,Noah Davis,noah.davis@example.test,0400000012,Darwin,1987-02-03,Male,B+,Peanuts
+4,Grace Evans,grace.evans@example.test,0400000013,Katherine,1992-11-15,Female,AB+,None known
+5,Liam Foster,liam.foster@example.test,0400000014,Darwin,2001-06-28,Male,O-,Dust
+6,Ava Green,ava.green@example.test,0400000015,Palmerston,1999-01-19,Female,A-,None known
