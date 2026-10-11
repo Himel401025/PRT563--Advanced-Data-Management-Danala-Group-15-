@@ -1,0 +1,4 @@
+record_id,appointment_id,blood_pressure,pulse_rate,temperature_c,weight_kg,diagnosis,symptoms,doctor_advice,follow_up_date,created_at
+1,1,118/76,72,36.7,62.0,Routine gynecological review - no acute issue,Routine follow-up,Maintain routine screening schedule.,2027-02-18,2026-09-01 14:22:41
+2,2,132/84,78,36.8,70.5,Mild hypertension requiring monitoring,Intermittent chest tightness,Monitor blood pressure and return if symptoms worsen.,2026-09-21,2026-09-01 14:22:41
+3,3,120/80,74,37.1,81.0,Viral upper respiratory infection,"Headache, fatigue and nasal congestion","Rest, fluids and symptomatic treatment.",2026-08-29,2026-09-01 14:22:41

@@ -1,0 +1,202 @@
+// PRT563 Assignment 4 - Task 2: Neo4j Graph Database Implementation
+// Project: MediConnect Healthcare Patient Appointment Booking
+// Run this file from top to bottom after placing all CSV files in Neo4j's
+// configured import directory. Designed for Neo4j 5.x / Cypher 5.
+
+// 1. UNIQUENESS CONSTRAINTS AND SEARCH-PERFORMANCE INDEXES
+
+CREATE CONSTRAINT patient_id IF NOT EXISTS
+FOR (p:Patient) REQUIRE p.patientId IS UNIQUE;
+
+CREATE CONSTRAINT patient_email IF NOT EXISTS
+FOR (p:Patient) REQUIRE p.email IS UNIQUE;
+
+CREATE CONSTRAINT doctor_id IF NOT EXISTS
+FOR (d:Doctor) REQUIRE d.doctorId IS UNIQUE;
+
+CREATE CONSTRAINT doctor_email IF NOT EXISTS
+FOR (d:Doctor) REQUIRE d.email IS UNIQUE;
+
+CREATE CONSTRAINT doctor_license IF NOT EXISTS
+FOR (d:Doctor) REQUIRE d.licenseNo IS UNIQUE;
+
+CREATE CONSTRAINT specialization_id IF NOT EXISTS
+FOR (s:Specialization) REQUIRE s.specializationId IS UNIQUE;
+
+CREATE CONSTRAINT specialization_name IF NOT EXISTS
+FOR (s:Specialization) REQUIRE s.name IS UNIQUE;
+
+CREATE CONSTRAINT availability_id IF NOT EXISTS
+FOR (v:Availability) REQUIRE v.availabilityId IS UNIQUE;
+
+CREATE CONSTRAINT appointment_id IF NOT EXISTS
+FOR (a:Appointment) REQUIRE a.appointmentId IS UNIQUE;
+
+CREATE CONSTRAINT payment_id IF NOT EXISTS
+FOR (p:Payment) REQUIRE p.paymentId IS UNIQUE;
+
+CREATE CONSTRAINT payment_transaction IF NOT EXISTS
+FOR (p:Payment) REQUIRE p.transactionId IS UNIQUE;
+
+CREATE CONSTRAINT medical_record_id IF NOT EXISTS
+FOR (m:MedicalRecord) REQUIRE m.recordId IS UNIQUE;
+
+CREATE CONSTRAINT prescription_id IF NOT EXISTS
+FOR (r:Prescription) REQUIRE r.prescriptionId IS UNIQUE;
+
+CREATE RANGE INDEX doctor_fee IF NOT EXISTS
+FOR (d:Doctor) ON (d.consultationFee);
+
+CREATE RANGE INDEX doctor_status IF NOT EXISTS
+FOR (d:Doctor) ON (d.verificationStatus);
+
+CREATE RANGE INDEX appointment_date IF NOT EXISTS
+FOR (a:Appointment) ON (a.appointmentDate);
+
+CREATE RANGE INDEX appointment_status IF NOT EXISTS
+FOR (a:Appointment) ON (a.bookingStatus);
+
+
+
+// 2. CREATE NODES FROM CSV FILES
+
+LOAD CSV WITH HEADERS FROM 'file:///patients.csv' AS row
+MERGE (p:Patient {patientId: toInteger(row.patient_id)})
+SET p.name = row.full_name,
+    p.email = row.email,
+    p.phone = row.phone,
+    p.city = row.city,
+    p.dateOfBirth = CASE WHEN trim(row.date_of_birth) = '' THEN null ELSE date(row.date_of_birth) END,
+    p.gender = row.gender,
+    p.bloodGroup = row.blood_group,
+    p.allergies = row.allergies;
+
+LOAD CSV WITH HEADERS FROM 'file:///doctors.csv' AS row
+MERGE (d:Doctor {doctorId: toInteger(row.doctor_id)})
+SET d.name = row.full_name,
+    d.email = row.email,
+    d.phone = row.phone,
+    d.city = row.city,
+    d.licenseNo = row.license_no,
+    d.qualifications = row.qualifications,
+    d.experienceYears = toInteger(row.experience_years),
+    d.consultationFee = toFloat(row.consultation_fee),
+    d.hospital = row.hospital_affiliation,
+    d.verificationStatus = row.verification_status,
+    d.biography = row.biography;
+
+LOAD CSV WITH HEADERS FROM 'file:///specializations.csv' AS row
+MERGE (s:Specialization {specializationId: toInteger(row.specialization_id)})
+SET s.name = row.name,
+    s.description = row.description;
+
+LOAD CSV WITH HEADERS FROM 'file:///availability.csv' AS row
+MERGE (v:Availability {availabilityId: toInteger(row.availability_id)})
+SET v.dayOfWeek = row.day_of_week,
+    v.startTime = time(row.start_time),
+    v.endTime = time(row.end_time);
+
+LOAD CSV WITH HEADERS FROM 'file:///appointments.csv' AS row
+MERGE (a:Appointment {appointmentId: toInteger(row.appointment_id)})
+SET a.appointmentDate = date(row.appointment_date),
+    a.startTime = time(row.start_time),
+    a.endTime = time(row.end_time),
+    a.reasonForVisit = row.reason_for_visit,
+    a.consultationFormat = row.consultation_format,
+    a.feeAtBooking = toFloat(row.fee_at_booking),
+    a.bookingStatus = row.booking_status,
+    a.paymentStatus = row.payment_status,
+    a.createdAt = localdatetime(replace(row.created_at, ' ', 'T'));
+
+LOAD CSV WITH HEADERS FROM 'file:///payments.csv' AS row
+MERGE (p:Payment {paymentId: toInteger(row.payment_id)})
+SET p.transactionId = row.transaction_id,
+    p.gateway = row.gateway,
+    p.amount = toFloat(row.amount),
+    p.currency = row.currency,
+    p.status = row.payment_status,
+    p.paidAt = CASE WHEN trim(row.paid_at) = '' THEN null
+                    ELSE localdatetime(replace(row.paid_at, ' ', 'T')) END;
+
+LOAD CSV WITH HEADERS FROM 'file:///medical_records.csv' AS row
+MERGE (m:MedicalRecord {recordId: toInteger(row.record_id)})
+SET m.bloodPressure = row.blood_pressure,
+    m.pulseRate = CASE WHEN trim(row.pulse_rate) = '' THEN null ELSE toInteger(row.pulse_rate) END,
+    m.temperatureC = CASE WHEN trim(row.temperature_c) = '' THEN null ELSE toFloat(row.temperature_c) END,
+    m.weightKg = CASE WHEN trim(row.weight_kg) = '' THEN null ELSE toFloat(row.weight_kg) END,
+    m.diagnosis = row.diagnosis,
+    m.symptoms = row.symptoms,
+    m.doctorAdvice = row.doctor_advice,
+    m.followUpDate = CASE WHEN trim(row.follow_up_date) = '' THEN null ELSE date(row.follow_up_date) END,
+    m.createdAt = localdatetime(replace(row.created_at, ' ', 'T'));
+
+LOAD CSV WITH HEADERS FROM 'file:///prescriptions.csv' AS row
+MERGE (r:Prescription {prescriptionId: toInteger(row.prescription_id)})
+SET r.medicineName = row.medicine_name,
+    r.strength = row.strength,
+    r.frequency = row.frequency,
+    r.duration = row.duration,
+    r.instruction = row.instruction;
+
+
+
+// 3. CREATE RELATIONSHIPS FROM FOREIGN-KEY COLUMNS
+
+LOAD CSV WITH HEADERS FROM 'file:///doctors.csv' AS row
+MATCH (d:Doctor {doctorId: toInteger(row.doctor_id)})
+MATCH (s:Specialization {specializationId: toInteger(row.specialization_id)})
+MERGE (d)-[:SPECIALIZED_IN]->(s);
+
+LOAD CSV WITH HEADERS FROM 'file:///availability.csv' AS row
+MATCH (d:Doctor {doctorId: toInteger(row.doctor_id)})
+MATCH (v:Availability {availabilityId: toInteger(row.availability_id)})
+MERGE (d)-[:HAS_AVAILABILITY]->(v);
+
+LOAD CSV WITH HEADERS FROM 'file:///appointments.csv' AS row
+MATCH (p:Patient {patientId: toInteger(row.patient_id)})
+MATCH (d:Doctor {doctorId: toInteger(row.doctor_id)})
+MATCH (a:Appointment {appointmentId: toInteger(row.appointment_id)})
+MERGE (p)-[:BOOKED]->(a)
+MERGE (a)-[:WITH_DOCTOR]->(d);
+
+LOAD CSV WITH HEADERS FROM 'file:///payments.csv' AS row
+MATCH (a:Appointment {appointmentId: toInteger(row.appointment_id)})
+MATCH (p:Payment {paymentId: toInteger(row.payment_id)})
+MERGE (a)-[:PAID_BY]->(p);
+
+LOAD CSV WITH HEADERS FROM 'file:///medical_records.csv' AS row
+MATCH (a:Appointment {appointmentId: toInteger(row.appointment_id)})
+MATCH (m:MedicalRecord {recordId: toInteger(row.record_id)})
+MERGE (a)-[:GENERATED_RECORD]->(m);
+
+LOAD CSV WITH HEADERS FROM 'file:///prescriptions.csv' AS row
+MATCH (m:MedicalRecord {recordId: toInteger(row.record_id)})
+MATCH (r:Prescription {prescriptionId: toInteger(row.prescription_id)})
+MERGE (m)-[:CONTAINS]->(r);
+
+
+
+// 4. POST-IMPORT VALIDATION
+
+MATCH (n)
+RETURN labels(n) AS label, count(*) AS nodeCount
+ORDER BY label;
+
+MATCH ()-[r]->()
+RETURN type(r) AS relationshipType, count(*) AS relationshipCount
+ORDER BY relationshipType;
+
+// Must return zero rows: every appointment needs one patient and one doctor.
+MATCH (a:Appointment)
+WHERE NOT (a)<-[:BOOKED]-(:Patient)
+   OR NOT (a)-[:WITH_DOCTOR]->(:Doctor)
+RETURN a.appointmentId AS orphanAppointment;
+
+// Must return zero rows: every prescription needs a medical record.
+MATCH (r:Prescription)
+WHERE NOT (:MedicalRecord)-[:CONTAINS]->(r)
+RETURN r.prescriptionId AS orphanPrescription;
+
+SHOW CONSTRAINTS;
+SHOW INDEXES;
+

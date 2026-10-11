@@ -1,0 +1,9 @@
+doctor_id,full_name,email,phone,city,specialization_id,license_no,qualifications,experience_years,consultation_fee,hospital_affiliation,verification_status,biography
+1,Dr Olivia Taylor,olivia@mediconnect.test,0400000002,Darwin,4,MED-AU-33190,"MD Obstetrics & Gynecology, FRANZCOG",11,85.0,Darwin Women's Health Clinic,APPROVED,Women's health and gynecology specialist.
+2,Dr Sophia Chen,sophia@mediconnect.test,0400000003,Darwin,2,MED-AU-77610,"MD Dermatology, FACD",10,80.0,Metropolitan Skin & Laser Clinic,APPROVED,Dermatology and skin-care specialist.
+3,Dr Emily Watson,emily@mediconnect.test,0400000004,Darwin,1,MED-AU-90214,"MBBS, MD Cardiology, FRACP",12,75.0,Royal Darwin Heart Institute,APPROVED,Cardiovascular medicine specialist.
+4,Dr James Wilson,james@mediconnect.test,0400000005,Darwin,6,MED-AU-55219,"MBBS, MS Ortho, FRACS",15,90.0,Northern Territory Joint & Spine Centre,APPROVED,Orthopedic and musculoskeletal specialist.
+5,Dr Marcus Hayes,marcus@mediconnect.test,0400000006,Darwin,7,MED-AU-84192,"MBBS, DCH, FRACP",8,60.0,Children's Health & Wellness Centre,APPROVED,Pediatric care specialist.
+6,Dr Sarah Jenkins,sarah@mediconnect.test,0400000007,Darwin,3,MED-AU-65421,"MBBS, FRACGP",7,50.0,Darwin Community Medical Centre,APPROVED,General medical practitioner.
+7,Dr David Miller,david@mediconnect.test,0400000008,Darwin,5,MED-PENDING-9941,"MBBS, MD Neurology",6,95.0,Top End Neuro Clinic,PENDING,Neurology practitioner awaiting approval.
+8,Dr Amina Rahman,amina@mediconnect.test,0400000009,Darwin,8,MED-AU-44820,"MBBS, FRANZCO",9,70.0,Darwin Eye Centre,APPROVED,Ophthalmology and vision specialist.
