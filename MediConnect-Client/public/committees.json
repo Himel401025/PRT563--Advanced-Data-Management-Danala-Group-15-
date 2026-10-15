@@ -1,0 +1,707 @@
+[
+  {
+    "role": "Chief Patron",
+    "members": [
+      {
+        "name": "Vice Chancellor, PUST",
+        "position": "Vice Chancellor, PUST",
+        "image": "https://i.ibb.co.com/0jdPj83F/image.png"
+      }
+    ]
+  },
+  {
+    "role": "Patrons",
+    "members": [
+      {
+        "name": "Prof. Dr. Md. Nazrul Islam",
+        "position": "Pro-Vice Chancellor, PUST",
+        "image": "https://www.pust.ac.bd/includes/images/administrators/Pro%20Vice%20Chancellor_2024.JPG"
+      },
+      {
+        "name": "Prof. Dr. Md. Shamim Ahsan",
+        "position": "Treasurer, PUST",
+        "image": "https://www.pust.ac.bd/includes/images/administrators/TREASURER.jpg"
+      }
+    ]
+  },
+  {
+    "role": "International Advisory Committee",
+    "members": [
+      {
+        "name": "Prof. Saifur Rahman",
+        "position": "Virginia Tech, USA",
+        "image": "https://i.ibb.co.com/1G4fTV1n/image.png"
+      },
+      {
+        "name": "Prof. Mohammad H Rashid",
+        "position": "University of Central Florida, USA",
+        "image": "https://i.ibb.co.com/qMvSWQR2/Rashid-Muhammad-211.jpg"
+      },
+      {
+        "name": "Prof. Dr. Martin Byung-Guk Jun",
+        "position": "Purdue University, USA",
+        "image": "https://engineering.purdue.edu/ResourceDB/ResourceFiles/image158060"
+      },
+      {
+        "name": "Prof. Dr. Mukti M. Rana",
+        "position": "Delaware State University, USA",
+        "image": "https://i.ibb.co.com/pvqMDvbY/image.png"
+      },
+      {
+        "name": "Prof. Dr. Kaushik Roy",
+        "position": "North Carolina A&T State University (NCAT), USA",
+        "image": "https://i.ibb.co.com/CsV8gPpW/image.png"
+      },
+      {
+        "name": "Prof. Dr. Mohd. Hasan Ali",
+        "position": "University of Memphis, USA",
+        "image": "https://i.ibb.co.com/XZ8NVZmH/image.png"
+      },
+      {
+        "name": "Prof. B. M. Azizur Rahman",
+        "position": "City University of London, UK",
+        "image": "https://i.ibb.co.com/qLyBLLVx/Azizur-Rahman-14.webp"
+      },
+      {
+        "name": "Prof. Dr. Masanori Hanawa",
+        "position": "University of Yamanashi, Japan",
+        "image": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=n_5-iecAAAAJ&citpid=1"
+      },
+      {
+        "name": "Prof. Dr. Anis Haque",
+        "position": "TISP, IEEE, University of Calgary, Canada",
+        "image": "https://profiles.ucalgary.ca/sites/default/files/styles/ucws_profile_picture/public/2024-05/Anis%20Profile.jpg?h=4fda0f34&itok=yUNrHybs"
+      },
+      {
+        "name": "Prof. Dr Tariqul Islam",
+        "position": "Senior Member, IEEE, Universiti Kebangsaan Malaysia, Malaysia",
+        "image": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=X2k_pIYAAAAJ&citpid=2"
+      },
+      {
+        "name": "Prof. Dr. Nemai Chandra Karmakar",
+        "position": "Monash University, Australia",
+        "image": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=d8QvhmQAAAAJ&citpid=4"
+      },
+      {
+        "name": "Prof. Dr. Jungpil Shin",
+        "position": "The University of AIZU, Japan",
+        "image": "https://i.ibb.co.com/LdKc2cT2/image.png"
+      },
+      {
+        "name": "Prof. Dr. Kunio Okimura",
+        "position": "Tokai University, Japan",
+        "image": "https://researchmap.jp/read0177992/avatar.JPG"
+      },
+      {
+        "name": "Prof. Dr. Kiyoteru Kobayashi",
+        "position": "ESCO, Ltd., Tokyo, JAPAN",
+        "image": "https://researchmap.jp/read0126991/avatar.JPG"
+      },
+      {
+        "name": "Prof. Dr. Hiromitsu Nishizaki",
+        "position": "University of Yamanashi, Japan",
+        "image": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=UGpdyLMAAAAJ&citpid=1"
+      },
+      {
+        "name": "Prof. Boualem Boashash",
+        "position": "The University of Queensland, Australia",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbvX1nlkRBIkAXO6hUpDhu7QOVPNiIUmkcbb6sdr_DMp7q0Z9j550q1ho&usqp=CAE&s"
+      },
+      {
+        "name": "Prof. Dr. Md. Apel Mahmud",
+        "position": "Flinders University, Australia",
+        "image": "https://i.ibb.co.com/0RSCtpP3/image.png"
+      },
+      {
+        "name": "Prof. Dr. Mohd Rashidi Che Beson",
+        "position": "Universiti Malaysia Perlis",
+        "image": "https://i.ibb.co.com/CpCtV4Kx/image.png"
+      },
+      {
+        "name": "Prof. Dr. Bikash Nakarmi",
+        "position": "Nanjing University of Aeronautics and Astronautics, China",
+        "image": "https://i.ibb.co.com/F4pCZYj1/image.png"
+      },
+      {
+        "name": "Prof. Dr. Mohammad A. Karim",
+        "position": "University of Massachusetts, USA",
+        "image": "https://i.ibb.co.com/21MVkxKP/image.png"
+      },
+      {
+        "name": "Prof. Dr. Yeong Min Jang",
+        "position": "Kookmin University, South Korea",
+        "image": "https://i.ibb.co.com/1tMspCD6/citations-3.jpg"
+      },
+      {
+        "name": "Dr. S.H. Shah Newaz",
+        "position": "Universiti Teknologi Brunei, Brunei Darussalam",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMpJ1fbE5WugLW-CE01SsmktADfmRC9F_u7CRBaVy6kA&usqp=CAE&s"
+      },
+      {
+        "name": "Dr. Md. Shahiduzzaman (Sohel)",
+        "position": "Kanazawa University, Japan",
+        "image": "https://researchmap.jp/Sohel/avatar.jpg"
+      },
+      {
+        "name": "Dr. Mohammad Ali Moni",
+        "position": "University of Queensland, Australia",
+        "image": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=JnwcUwkAAAAJ&citpid=2"
+      },
+      {
+        "name": "Dr. Farid Ahmed",
+        "position": "University of Texas Rio Grande Valley, USA",
+        "image": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=oS8iWM0AAAAJ&citpid=3"
+      },
+      {
+        "name": "Dr. Md. Suruz Mian",
+        "position": "Tokai University, Japan",
+        "image": "https://i.ibb.co.com/rGP98WfM/image.png"
+      },
+      {
+        "name": "Dr. Parvez Mahmud",
+        "position": "University of Technology Sydney, Australia",
+        "image": "https://i.ibb.co.com/HpPGrr45/image.png"
+      },
+      {
+        "name": "Dr. Nazmul Siddique",
+        "position": "Ulster University, United Kingdom",
+        "image": "https://i.ibb.co.com/6RHPmxvQ/1667987309223.jpg"
+      },
+      {
+        "name": "Dr. Mohammed Kamruzzaman",
+        "position": "University of Illinois Urbana-Champaign, USA",
+        "image": "https://i.ibb.co.com/TM36dHmt/1637732973427.jpg"
+      },
+      {
+        "name": "Dr. Anjan Kumar Paul",
+        "position": "Samsung Electronics, South Korea",
+        "image": "https://i.ibb.co.com/pqQ1cCr/image.png"
+      },
+      {
+        "name": "Dr. Mohammad Rakib Uddin",
+        "position": "SUNNY Polytechnic Institute, USA",
+        "image": "https://i.ibb.co.com/GvtmHt5h/image.png"
+      }
+    ]
+  },
+  {
+    "role": "National Advisory Committee",
+    "members": [
+      {
+        "name": "Prof. Dr. S M Abdur Razzak",
+        "position": "Vice Chancellor, RUET",
+        "image": "https://i.ibb.co.com/QFTSc4k3/image.png"
+      },
+      {
+        "name": "Prof. Dr. Md. Ashraful Hoque",
+        "position": "Vice-Chancellor, Ahsanullah University of Science and Technology",
+        "image": "https://i.ibb.co.com/bjWBGptg/7wfl-CR7o-CVFNj9b-Dna-PROKZ3-Zb-Hlmhk-JSe9j-YGs-K.jpg"
+      },
+      {
+        "name": "Prof. Dr. A B M Shawkat Ali",
+        "position": "Vice Chancellor, BUBT",
+        "image": "https://i.ibb.co.com/mCqfDBYd/image.png"
+      },
+      {
+        "name": "Prof. Dr. Khademul Islam Molla",
+        "position": "Vice Chancellor, Varendra University",
+        "image": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=7X_FeIIAAAAJ&citpid=3"
+      },
+      {
+        "name": "Prof. Md. Monjarul Alam",
+        "position": "Vice-Chancellor, Hamdard University Bangladesh",
+        "image": "https://i.ibb.co.com/x8tkGZKd/image.png"
+      },
+      {
+        "name": "Prof. Dr. M. Mofazzal Hossain",
+        "position": "SM IEEE, Pro-Vice Chancellor, Southeast University",
+        "image": "https://ums-local.seu.edu.bd/file-server/v/2.0.0/profile-picture/hossain.mofazzal_dqtedh0v.jpg"
+      },
+      {
+        "name": "Prof. Dr. Celia Shahnaz",
+        "position": "EEE, BUET",
+        "image": "https://i.ibb.co.com/NcDcR7D/486978695-2752808188247014-8749336289953532407-n.png"
+      },
+      {
+        "name": "Prof. Dr. Shaikh Anowarul Fattah",
+        "position": "EEE, BUET",
+        "image": "https://i.ibb.co.com/vvC45fFB/image.png"
+      },
+      {
+        "name": "Prof. Dr. Mohammed Imamul Hassan Bhuiyan",
+        "position": "EEE, BUET",
+        "image": "http://eee.buet.ac.bd/archive/FacultyPage/photos/DMIHB.jpg"
+      },
+      {
+        "name": "Prof. Dr. Md. Delawer Hossain",
+        "position": "Dept. of EEE and Director, IQAC, IIUC",
+        "image": "https://i.ibb.co.com/7dr42dRM/FB30-B1-A6-777-F-4-DA2-A37-D-B5392674-D1-AD.png"
+      },
+      {
+        "name": "Prof. Dr. S.M. Mostafa Al Mamun",
+        "position": "EEE, University of Dhaka",
+        "image": "https://i.ibb.co.com/C5b4pGvF/image.png"
+      },
+      {
+        "name": "Prof. Dr. Chowdhury Farhan Ahmed",
+        "position": "CSE, University of Dhaka",
+        "image": "https://i.ibb.co.com/whGwQLJr/citations-2.jpg"
+      },
+      {
+        "name": "Prof. Dr. Abu Bakar Md. Ismail",
+        "position": "Dept. of EEE, University of Rajshahi",
+        "image": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=FmcnUd0AAAAJ&citpid=3"
+      },
+      {
+        "name": "Prof. Dr. Md Ekramul Hamid",
+        "position": "Dept. of CSE, University of Rajshahi",
+        "image": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=0EStz4UAAAAJ&citpid=2"
+      },
+      {
+        "name": "Prof. Dr. Monir Hossen",
+        "position": "SMIEEE, FIEB, Head, Dept. of ECE, KUET",
+        "image": "https://i.ibb.co.com/tT24P0Tz/image.png"
+      },
+      {
+        "name": "Prof. Dr. Mohiuddin Ahmad",
+        "position": "EEE, KUET",
+        "image": "https://i.ibb.co.com/Q7ZY0RR8/139.jpg"
+      },
+      {
+        "name": "Prof. Dr. Engr. Muhibul Haque Bhuyan",
+        "position": "Dept. of EEE, AIUB",
+        "image": "https://i.ibb.co.com/TM9Ws56C/image.png"
+      },
+      {
+        "name": "Prof. Dr. Salekul Islam",
+        "position": "Dept. of ECE, North South University",
+        "image": "https://i.ibb.co.com/gLWsTg3g/image.png"
+      },
+      {
+        "name": "Prof. Dr. Ajay Krishno Sarkar",
+        "position": "EEE, RUET",
+        "image": "https://i.ibb.co.com/LzWZD5q4/photo187.jpg"
+      },
+      {
+        "name": "Prof. Dr. Md. Faruk Hossain",
+        "position": "Dept. of EEE, RUET",
+        "image": "https://www.ruet.ac.bd/public/storage/profile/photo2.jpg"
+      },
+      {
+        "name": "Prof. Dr. Md. Abdur Razzak",
+        "position": "Dept. of EEE, Independent University",
+        "image": "https://iub.ac.bd/media-backend/faculty-media/Razzak_Sir-8f5bb7b9-6f9b-4c3b-8da9-f5897e85002e.png"
+      },
+      {
+        "name": "Prof. Dr. MG Sorwar Hossain",
+        "position": "EEE, BRAC University",
+        "image": "https://i.ibb.co.com/Xf2Fq0bz/golam-removebg-preview-1.jpg"
+      },
+      {
+        "name": "Prof. Dr. Md. Shamsul Arefin",
+        "position": "CSE, CUET",
+        "image": "https://i.ibb.co.com/d0tnZDvR/240304123730-3864.png"
+      },
+      {
+        "name": "Prof. Dr. Hasan Khaled Rouf",
+        "position": "Dept. of EEE, University of Chittagong",
+        "image": "https://cu.ac.bd/assets/image/faculty_staff_users/68_7VH6HU0FSH.jpg"
+      },
+      {
+        "name": "Prof. Dr. Muhammad Shahin Uddin",
+        "position": "ICT, MBSTU",
+        "image": "https://i.ibb.co.com/gMc1sbVv/image.png"
+      },
+      {
+        "name": "Prof. Dr. Mehedi Hasan Talukder",
+        "position": "CSE, MBSTU",
+        "image": "https://i.ibb.co.com/nMczg619/image.png"
+      },
+      {
+        "name": "Prof. Dr. Md. Delowar Hossain",
+        "position": "CSE, HSTU",
+        "image": "https://i.ibb.co.com/7JXC0xPw/image.png"
+      },
+      {
+        "name": "Prof. Dr. Md. Mahabub Hossain",
+        "position": "ECE, HSTU",
+        "image": "https://i.ibb.co.com/YCTHZbz/image.png"
+      },
+      {
+        "name": "Prof. Dr. Md. Mizanur Rahman",
+        "position": "ECE, Khulna University",
+        "image": "https://i.ibb.co.com/kVZYfzgj/image.png"
+      },
+      {
+        "name": "Prof. Dr. Mohammad Abul Kashem",
+        "position": "CSE, DUET",
+        "image": "https://i.ibb.co.com/FqwKp34d/image.png"
+      }
+    ]
+  },
+  {
+    "role": "Organizing Chair",
+    "members": [
+      {
+        "name": "Prof. Dr. Md. Anwar Hossain",
+        "position": "Dean, Faculty of Engineering and Technology, PUST",
+        "image": "https://www.pust.ac.bd/includes/images/teachers/Anwar 1.jpg"
+      }
+    ]
+  },
+  {
+    "role": "Organizing Co-Chair(s)",
+    "members": [
+      {
+        "name": "Prof. Dr. Sheikh Rashel Al Ahmed",
+        "position": "Chairman, EECE, PUST",
+        "image": "https://www.pust.ac.bd/includes/images/teachers/Photo_Rashel.JPG"
+      },
+      {
+        "name": "Prof. Dr. Tahmina Tasnim Nahar",
+        "position": "Chairman, Civil Engineering, PUST",
+        "image": "https://www.pust.ac.bd/includes/images/teachers/Photo_Tahmina1.jpg"
+      }
+    ]
+  },
+  {
+    "role": "Organizing Secretary",
+    "members": [
+      {
+        "name": "Prof. Dr. Md. Abdur Rahim",
+        "position": "Chairman, CSE, PUST",
+        "image": "https://i.ibb.co.com/70wJt8Y/image.png"
+      }
+    ]
+  },
+  {
+    "role": "Technical Program Chair",
+    "members": [
+      {
+        "name": "Prof. Dr. Md. Najmul Hossain",
+        "position": "EECE, PUST",
+        "image": "https://www.pust.ac.bd/includes/images/teachers/Dr. MNH Photo.jpg?key=123"
+      }
+    ]
+  },
+  {
+    "role": "Technical Program Co-Chair(s)",
+    "members": [
+      {
+        "name": "Dr. Md. Toukir Ahmed",
+        "position": "Associate Professor, CSE, PUST",
+        "image": "https://www.pust.ac.bd/includes/images/teachers/IMG-0610.jpg?key=123"
+      },
+      {
+        "name": "Prof. Dr. Mohammed Moshiul Hoque",
+        "position": "CSE, CUET",
+        "image": "https://i.ibb.co.com/hJ54Hf4Y/6795d8dc5541b.png"
+      },
+      {
+        "name": "Prof. Dr. Md. Maniruzzaman",
+        "position": "ECE, Khulna University",
+        "image": "https://i.ibb.co.com/Z4RW9dL/image.png"
+      }
+    ]
+  },
+  {
+    "role": "Technical Program Secretary(s)",
+    "members": [
+      {
+        "name": "T. H. M. Sumon Rashid",
+        "position": "Chairman & Associate Professor, EEE, PUST",
+        "image": "https://www.pust.ac.bd/includes/images/teachers/Headshot_Sumon.jpg"
+      },
+      {
+        "name": "Prof. Dr. Sheikh Md. Rabiul Islam",
+        "position": "ECE, KUET",
+        "image": "https://i.ibb.co.com/gFBCMYKn/Whats-App-Image-2026-01-27-at-11-59-46-PM.jpg"
+      }
+    ]
+  },
+  {
+    "role": "Member(s)",
+    "members": [
+      {
+        "name": "Prof. Dr. Md Ali Hossain",
+        "position": "CSE, RUET",
+        "image": "https://i.ibb.co.com/GvXjZWf2/photo9.png"
+      },
+      {
+        "name": "Prof. Dr. Shahriar Khan",
+        "position": "EEE, Independent University",
+        "image": "https://i.ibb.co.com/xSrWbBMf/Prof-Dr-Shahriar-Khan.png"
+      },
+      {
+        "name": "Prof. Dr. Md. Azad Hossain",
+        "position": "ETE, CUET",
+        "image": "https://i.ibb.co.com/q34SL8q6/image.png"
+      },
+      {
+        "name": "Prof. Dr. Kamruddin Nur",
+        "position": "Computer Science, AIUB",
+        "image": "https://i.ibb.co.com/xqB1hH8Y/image.png"
+      },
+      {
+        "name": "Dr. M Tanseer Ali",
+        "position": "Associate Professor, EEE, AIUB",
+        "image": "https://i.ibb.co.com/4g1Qpc1c/image.png"
+      },
+      {
+        "name": "Dr. Nafees Mansoor",
+        "position": "Associate Professor, CSE, ULAB",
+        "image": "https://i.ibb.co.com/cmCCh1q/image.png"
+      },
+      {
+        "name": "Dr. Mahmudul Hasan",
+        "position": "Chairman & Associate Professor, CSE, Comilla University",
+        "image": "https://i.ibb.co.com/21Mv1JGw/image.png"
+      },
+      {
+        "name": "Dr. Tama Fouzder",
+        "position": "Associate Professor, EEE, Daffodil International University",
+        "image": "https://faculty.daffodilvarsity.edu.bd/images/teacher/d681b1cd89eef58b2befaaf421de50ac.jpg"
+      },
+      {
+        "name": "Dr. Md Aminul Islam",
+        "position": "Associate Professor, EECE, MIST",
+        "image": "https://i.ibb.co.com/B5wh4VGF/image.png"
+      },
+      {
+        "name": "Md. Shamim Hossain",
+        "position": "EEE, PUST",
+        "image": ""
+      },
+      {
+        "name": "Nitun Kumar Podder",
+        "position": "CSE, PUST",
+        "image": ""
+      },
+      {
+        "name": "Nakib Aman",
+        "position": "CSE, PUST",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "role": "Finance Chair",
+    "members": [
+      {
+        "name": "Dr. Md. Imran Hossain",
+        "position": "Associate Professor, ICE, PUST",
+        "image": "https://www.pust.ac.bd/includes/images/teachers/WeChat Image_20220515194336.jpg?key=123"
+      }
+    ]
+  },
+  {
+    "role": "Finance Secretary",
+    "members": [
+      {
+        "name": "Dr. Md. Motiur Rahman",
+        "position": "Associate Professor, Civil, PUST",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "role": "Finance Members",
+    "members": [
+      {
+        "name": "Prof. Dr. Md. Saiful Islam",
+        "position": "EECE, PUST",
+        "image": ""
+      },
+      {
+        "name": "Prof. Dr. Md. Rashedul Haque",
+        "position": "Civil, PUST",
+        "image": ""
+      },
+      {
+        "name": "Md. Shariul Azam",
+        "position": "Associate Professor, CSE, PUST",
+        "image": ""
+      },
+      {
+        "name": "Jannat Ara Ferdousi",
+        "position": "Architecture, PUST",
+        "image": ""
+      },
+      {
+        "name": "Md. Abir Hasan",
+        "position": "Civil, PUST",
+        "image": ""
+      },
+      {
+        "name": "Taskin Noor Turna",
+        "position": "ICE, PUST",
+        "image": ""
+      },
+      {
+        "name": "Tarun Debnath",
+        "position": "ICE, PUST",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "role": "Publication Chair(s)",
+    "members": [
+      {
+        "name": "Prof. Dr. Md. Sarwar Hosain",
+        "position": "ICE, PUST",
+        "image": "https://i.ibb.co.com/Z68f6BSr/MSH.jpg"
+      },
+      {
+        "name": "Prof. Dr. Muhammad Sajjadur Rahim",
+        "position": "ICE, University of Rajshahi",
+        "image": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=iduppzIAAAAJ&citpid=5"
+      }
+    ]
+  },
+  {
+    "role": "Publication Secretary",
+    "members": [
+      {
+        "name": "Dr. Md. Rashedul Islam",
+        "position": "Associate Professor, EECE, PUST",
+        "image": "https://i.ibb.co.com/XZ69Y9Jy/DSC-044.png"
+      }
+    ]
+  },
+  {
+    "role": "Publication Members",
+    "members": [
+      {
+        "name": "Dr. A.H.M. Iftekharul Ferdous",
+        "position": "Associate Professor, EEE, PUST",
+        "image": ""
+      },
+      {
+        "name": "Kumary Sumi Rani Shaha",
+        "position": "EECE, PUST",
+        "image": ""
+      },
+      {
+        "name": "Akif Mahdi",
+        "position": "ICE, PUST",
+        "image": ""
+      },
+      {
+        "name": "Most. Marzia Khatun",
+        "position": "EECE, PUST",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "role": "Design and Publicity Committee Chair",
+    "members": [
+      {
+        "name": "Md. Ashrafuzzaman Pramanik",
+        "position": "Chairman & Associate Professor, URP, PUST",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "role": "Design and Publicity Committee Secretary",
+    "members": [
+      {
+        "name": "Laila Arzumand Banu",
+        "position": "Chairman, Architecture, PUST",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "role": "Design and Publicity Committee Members",
+    "members": [
+      {
+        "name": "Dr. Md. Feroz Ali",
+        "position": "Associate Professor, EEE, PUST",
+        "image": ""
+      },
+      {
+        "name": "Audity Biswas",
+        "position": "Architecture, PUST",
+        "image": ""
+      },
+      {
+        "name": "Md. Ariful Islam",
+        "position": "EEE, PUST",
+        "image": ""
+      },
+      {
+        "name": "Sonjit Kumar Nath",
+        "position": "Architecture, PUST",
+        "image": ""
+      },
+      {
+        "name": "Saimunnahar Ritu",
+        "position": "URP, PUST",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "role": "Food and Accommodation Committee Chair",
+    "members": [
+      {
+        "name": "Prof. Dr. Md. Omar Faruk",
+        "position": "ICE, PUST",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "role": "Food and Accommodation Committee Secretary",
+    "members": [
+      {
+        "name": "S. M. Hasan Sazzad Iqbal",
+        "position": "Associate Professor, CSE, PUST",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "role": "Food and Accommodation Committee Members",
+    "members": [
+      {
+        "name": "Prof. Dr. Md. Rashedul Haque",
+        "position": "Civil, PUST",
+        "image": ""
+      },
+      {
+        "name": "Md. Golam Sadeque",
+        "position": "Associate Professor, EEE, PUST",
+        "image": ""
+      },
+      {
+        "name": "Md. Galib Hasan",
+        "position": "EEE, PUST",
+        "image": ""
+      },
+      {
+        "name": "Bijoy Dash Gupta",
+        "position": "Architecture, PUST",
+        "image": ""
+      },
+      {
+        "name": "Md. Kamrul Hasan",
+        "position": "URP, PUST",
+        "image": ""
+      },
+      {
+        "name": "Md. Imran Hossain",
+        "position": "EECE, PUST",
+        "image": ""
+      },
+      {
+        "name": "Zannatuge Jahan",
+        "position": "Architecture, PUST",
+        "image": ""
+      }
+    ]
+  }
+]
